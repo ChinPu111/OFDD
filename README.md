@@ -49,7 +49,3 @@ make
 ## Relation to RicBDD
 
 This package was structured as a parallel to the **RicBDD** teaching BDD code (Shannon expansion + ITE), but uses **positive Davio** instead of Shannon at each node. The test driver intentionally mirrors the RicBDD `testBdd` scenarios so you can compare sizes and behavior.
-
-## License
-
-Use and redistribution are subject to your course or project requirements; add a `LICENSE` file in the repo if you need a standard open-source terms.
