@@ -6,12 +6,12 @@ A compact C++ library for **ordered functional decision diagrams** using the **p
 
 At an internal node labeled by variable `x`, a Boolean function is represented as
 
-\[
-f \;=\; f|_{x=0} \;\oplus\; \bigl(x \wedge (f|_{x=0} \oplus f|_{x=1})\bigr)
-\]
+$$
+f = f|_{x=0} \oplus \left(x \wedge (f|_{x=0} \oplus f|_{x=1})\right)
+$$
 
-- **Left child** — \(f|_{x=0}\) (constant part when `x = 0`).
-- **Right child** — \(f|_{x=0} \oplus f|_{x=1}\) (Boolean XOR of the two Shannon cofactors).
+- **Left child** — $f|_{x=0}$ (constant part when `x = 0`).
+- **Right child** — $f|_{x=0} \oplus f|_{x=1}$ (Boolean XOR of the two Shannon cofactors).
 
 **Reduction:** if the right child denotes the constant **0**, the node is removed and the diagram reduces to the left child.
 
